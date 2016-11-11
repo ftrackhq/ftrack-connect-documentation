@@ -28,7 +28,7 @@ brief overview of the functionality:
 
 .. warning::
 
-    Note that the state of this tool is currently development preview and it
+    Note that the state of this tool is currently tech preview and it
     should **not** be used in production.
 
     Both the interface and the source and structure of the plugin will change
