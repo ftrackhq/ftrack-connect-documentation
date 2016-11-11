@@ -7,8 +7,7 @@
 Release and migration notes
 ***************************
 
-Find out information about what has changed between versions and any important
-migration notes to be aware of when switching to a new version.
+Find out all the information you need to migrate between versions.
 
 .. toctree::
     :maxdepth: 1
