@@ -8,8 +8,8 @@
 Maya
 ****
 
-.. release:: Upcoming
-    :date: 2016-11-08
+.. release:: 0.1.1
+    :date: 2016-11-14
 
     .. change:: new
         :tags: Documentation
