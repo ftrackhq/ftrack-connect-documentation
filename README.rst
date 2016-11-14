@@ -2,13 +2,21 @@
 ftrack-connect-documentation
 ###############################
 
-Documentation of ftrack Connect and Integrations
+This repository contains Documentation of ftrack Connect and Integrations.
+
+.. note::
+
+    This repository is work in progress and does not yet contain the full
+    documentation of Connect and all integrations between ftrack and supported
+    applications.
+
+    Please visit https://www.ftrack.com/integrations for full documentation.
 
 *************
 Documentation
 *************
 
-Full documentation, including installation and setup guides, can be found at
+The documentation, including installation and setup guides, can be found at
 http://ftrack-connect-documentation.rtd.ftrack.com/en/stable/
 
 *********************

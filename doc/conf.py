@@ -34,7 +34,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'ftrack-connect-documentation'
+project = u'ftrack integrations tech preview'
 copyright = u'2016, ftrack'
 
 # Version
@@ -89,18 +89,19 @@ def autodoc_skip(app, what, name, obj, skip, options):
 
     return skip
 
-
 # -- Intersphinx --------------------------------------------------------------
 
 intersphinx_mapping = {
-    'python': ('http://docs.python.org/', None)
+    'python': ('http://docs.python.org/', None),
+    'ftrack': ('http://rtd.ftrack.com/docs/ftrack/en/latest/', None),
+    'ftrack-connect': (
+        'http://rtd.ftrack.com/docs/ftrack-connect/en/latest/', None
+    )
 }
-
 
 # -- Todos ---------------------------------------------------------------------
 
 todo_include_todos = True
-
 
 # -- Setup --------------------------------------------------------------------
 
