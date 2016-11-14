@@ -1,12 +1,12 @@
 ..
     :copyright: Copyright (c) 2016 ftrack
 
-.. _release/release_notes:
+.. _release/maya/release_notes:
 
 
-*************
-Release notes
-*************
+****
+Maya
+****
 
 .. release:: Upcoming
     :date: 2016-11-08
