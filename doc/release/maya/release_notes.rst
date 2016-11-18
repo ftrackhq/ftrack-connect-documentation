@@ -8,6 +8,14 @@
 Maya
 ****
 
+.. release:: 0.1.2
+    :date: 2016-11-18
+
+    .. change:: new
+        :tags: Publishing
+
+        Added context switcher to publish dialog.
+
 .. release:: 0.1.1
     :date: 2016-11-14
 
