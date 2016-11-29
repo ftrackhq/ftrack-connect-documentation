@@ -19,6 +19,9 @@ Installation guide
     can be found from Connect menu > Open plugin directory.
 #.  git clone git@bitbucket.org:ftrack/ftrack-connect-maya-publish.git to
     <connect-plugin-directory>.
+#.  Checkout the latest tag::
+    git tag --list
+    git checkout <latest-tag>
 #.  cd to <connect-plugin-directory>/ftrack-connect-maya-publish/
 #.  Install all dependencies to a ftrack-connect-maya-publish into a directory
     with::
