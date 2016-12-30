@@ -15,13 +15,18 @@ Installation
 Installation guide
 ==================
 
+#.  Download and install ftrack Connect from
+    https://www.ftrack.com/portfolio/connect.
 #.  Open a terminal and navigate to a <connect-plugin-directory. The directory
-    can be found from Connect menu > Open plugin directory.
-#.  git clone git@bitbucket.org:ftrack/ftrack-connect-maya-publish.git to
+    can be found from Connect menu (click on service icon) > Open plugin
+    directory.
+#.  git clone https://bitbucket.org/ftrack/ftrack-connect-maya-publish.git to
     <connect-plugin-directory>.
 #.  Checkout the latest tag::
-    git tag --list
-    git checkout <latest-tag>
+
+        git tag --list
+        git checkout <latest-tag>
+
 #.  cd to <connect-plugin-directory>/ftrack-connect-maya-publish/
 #.  Install all dependencies to a ftrack-connect-maya-publish into a directory
     with::
