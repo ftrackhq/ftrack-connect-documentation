@@ -14,14 +14,8 @@ Selecting what to type of content to publish
 ============================================
 
 Select publish from the :guilabel:`ftrack new` menu and a window showing the
-possible actions will appear.
-
-Actions
--------
-
-.. image:: /image/maya_publish_actions.png
-
-At the moment there are a limited set of publish actions to choose from:
+possible actions will appear. At the moment there are a limited set of publish
+actions to choose from:
 
 *   Camera
 *   Geometry
