@@ -7,11 +7,6 @@
 Installation
 ************
 
-.. note::
-
-    The installation process is currently manual and requires basic
-    understanding of Git, Terminal and Python.
-
 Installation guide
 ==================
 
