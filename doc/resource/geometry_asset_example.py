@@ -1,8 +1,6 @@
 # :coding: utf-8
 # :copyright: Copyright (c) 2016 ftrack
 
-import ftrack_api
-
 import ftrack_connect_pipeline.asset
 
 import maya.cmds as cmds
@@ -11,7 +9,7 @@ import maya.cmds as cmds
 class PublishGeometry(ftrack_connect_pipeline.asset.PyblishAsset):
     '''Handle publish of maya geometry.'''
 
-    def get_options(self, publish_data):
+    def get_options(self):
         '''Return global options.'''
         options = [
             {
@@ -76,30 +74,28 @@ class PublishGeometry(ftrack_connect_pipeline.asset.PyblishAsset):
             }
         ]
 
-        default_options = super(
-            PublishGeometry, self
-        ).get_options(publish_data)
+        default_options = super(PublishGeometry, self).get_options()
 
-        options += default_options
-        return options
+        return default_options + options
 
-    def get_publish_items(self, publish_data):
+    def get_publish_items(self):
         '''Return list of items that can be published.'''
+        match = set(['geometry', 'ftrack'])
 
         options = []
-        for instance in publish_data:
-            if instance.data['family'] in ('ftrack.maya.geometry',):
+        for instance in self.pyblish_context:
+            if match.issubset(instance.data['families']):
                 options.append(
                     {
                         'label': instance.name,
                         'name': instance.name,
-                        'value': True
+                        'value': instance.data.get('publish', False)
                     }
                 )
 
         return options
 
-    def get_item_options(self, publish_data, name):
+    def get_item_options(self, name):
         '''Return options for publishable item with *name*.'''
         return []
 

@@ -15,9 +15,11 @@ Let us have a look at the structure of the geometry asset plugin::
 
     ftrack_connect_maya_publish/asset/geometry/
         pyblish_plugins/
+            __init__.py
             collect.py
             extract_alembic.py
             extract_mayabinary.py
+        __init__.py
         geometry_asset.py
 
 In the `pyblish_plugins` directory there are a number of pyblish plugins
@@ -38,7 +40,7 @@ register_geometry_asset.py in the `resource/` directory:
 Here we find the registration of the asset plugin for geometry. The asset plugin
 will be registered with a unique identifier when the application's
 ftrack-python-api session emits the
-:ref:`developing/event/ftrack.pipeline.register-assets`. The publish_asset
+:ref:`developing/event/ftrack.pipeline.register-assets`. The create_asset_publish
 argument, `PublishGeometry` instance will handle publishing.
 
 .. note::
@@ -102,18 +104,16 @@ Notable methods that are implemented on the `PublishGeometry` class:
     based publish workflow this is ususally done by filtering on the pyblish
     instance family/families.
 
-    The method takes a `publish_data` argument which in this case is a
-    :term:`pyblish` context.
 :get_options:
     Return a list of options that are general options for the publish.
 
-    The method takes a `publish_data` argument which in this case is a
-    :term:`pyblish` context.
 :get_item_options:
     Return a list of options that are valid for the given item name.
 
-    The method takes a `publish_data` argument which in this case is a
-    :term:`pyblish` context.
+These methods can access the current pyblish context on self::
+
+    for instance in self.pyblish_context:
+        print instance
 
 Pyblish plugins
 ---------------
@@ -122,5 +122,5 @@ In the `pyblish_plugins` directory we have the plugins that will collect the
 geometries from the scene and extract them as a maya binary and/or alembic.
 
 Common :term:`pyblish` plugins are defined in
-`ftrack_connect_maya_publish/common_pyblish_plugins` and will be used for
+`ftrack_connect_maya_publish/shared_pyblish_plugins` and will be used for
 collection and integration plugins that are shared between asset plugins.

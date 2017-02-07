@@ -24,14 +24,24 @@ session. The event is emitted synchronous::
 
 A common use is to register using the `ftrack_connect_pipeline.asset.Asset`::
 
-    geometry = ftrack_connect_pipeline.asset.Asset(
-        identifier='geometry',
-        publish_asset=geometry_asset.PublishGeometry(
-            label='Geometry',
+    def create_asset_publish():
+        '''Return asset publisher.'''
+        return geometry_asset.PublishGeo(
             description='publish geometry to ftrack.',
-            icon='http://www.clipartbest.com/cliparts/9cz/EzE/9czEzE8yi.png'
+            asset_type_short='geo'
         )
-    )
-    geometry.register(session)
+
+
+    def register_asset_plugin(session, event):
+        '''Register asset plugin.'''
+        geometry_asset = ftrack_connect_pipeline.asset.Asset(
+            identifier='geo',
+            label='Geometry',
+            icon='http://www.clipartbest.com/cliparts/9cz/EzE/9czEzE8yi.png',
+            create_asset_publish=create_asset_publish
+        )
+        # Register geo asset on session. This makes sure that discover is called
+        # for import and publish.
+        geometry_asset.register(session)
 
 Where geometry.register will attach relevant event / action listeners.
