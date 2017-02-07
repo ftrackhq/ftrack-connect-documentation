@@ -8,6 +8,64 @@
 Maya
 ****
 
+.. release:: 0.3.2
+    :date: 2017-02-07
+
+    .. change:: new
+        :tags: Publish
+
+        Added support to attach scene as reference when publishing.
+
+    .. change:: new
+        :tags: Publish
+
+        Application version and name is saved as metadata on component.
+
+    .. change:: new
+        :tags: Publish
+
+        Added support for creation of asset type if they do not exist.
+
+    .. change:: new
+        :tags: Validation
+
+        Added support for pyblish validations.
+
+    .. change:: changed
+        :tags: Publish, User interface
+
+        Changed style and layout of publish dialog.
+
+    .. change:: changed
+        :tags: Publish, Debugging
+
+        Improved debugging tools when publishing.
+
+    .. change:: changed
+        :tags: Publish
+
+        Improved result window for publishing using `Pyblish`.
+
+    .. change:: fixed
+        :tags: Publish
+
+        Hard to understand what to type in the asset version description.
+
+    .. change:: fixed
+        :tags: Publish
+
+        No empty text if there is nothing to publish.
+
+    .. change:: fixed
+        :tags: Publish
+
+        Checkboxes are hard to see in the UI.
+
+    .. change:: fixed
+        :tags: Publish, Thumbnail
+
+        Publish fails if no thumbnail is selected.
+
 .. release:: 0.2.0
     :date: 2016-11-29
 

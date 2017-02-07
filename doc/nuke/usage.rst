@@ -25,6 +25,7 @@ At the moment there are a limited set of publish actions to choose from:
 
 *   Media (currently image sequences)
 *   Camera
+*   Geometry
 
 The :term:`publish dialog` is populated with options based on what action you
 select.

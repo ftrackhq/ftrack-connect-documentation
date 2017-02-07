@@ -44,10 +44,6 @@ that is likely to be solved before the final release:
     :ref:`Nuke usage <nuke/usage>` and :ref:`Maya usage <maya/usage>`.
 *   The alembic and maya binary format cannot be disabled and both are always
     published.
-*   It is not possible to set the thumbnail when publishing.
-*   It is not possible to see or switch context of the publish.
-*   No feedback is given if an ftrack asset is not selected when publishing. At
-    the moment this will result in a failed publish.
 *   It is not possible to go back and change settings if a publish fails.
 *   The :term:`asset type` will be selected based on what you want to publish,
     but you are not restricted to this type. It does however affect the ability
@@ -66,12 +62,6 @@ Below is a list of limitations in regards to the Developer / TD aspect of the
 tools that is likely to be solved before the final release:
 
 *   There are limited support for modifying a bundled :term:`publish action`.
-*   Validation :term:`pyblish plugin` are not yet supported.
-*   The bundled :term:`pyblish plugin` are sourced by the
-    :term:`ftrack-python-api` rather than when calling
-    `pyblish.plugin.register_plugin_path`.
-*   The current iteration of the :term:`Import dialog` cannot import published
-    alembics.
 
 Feedback
 --------

@@ -17,6 +17,25 @@ Installation guide
 
 #.  Download and install ftrack Connect from
     https://www.ftrack.com/portfolio/connect.
+#.  Open the <connect-plugin-directory> by from the Connect menu:
+    (click on service icon) > Open plugin directory.
+#.  Download the plugins from: https://s3-eu-west-1.amazonaws.com/ftrack-deployment/ftrack-connect/plugins/ftrack-connect-nuke-publish-0.3.2.zip
+#.  Unzip ftrack-connect-nuke-publish-0.3.2.zip in <connect-plugin-directory>
+#.  Restart ftrack Connect.
+#.  Now you can launch Maya through Connect.
+
+Starting from Connect
+=====================
+
+#.  Start ftrack Connect (close and start if already running).
+#.  Start Maya for a task using ftrack connect or the ftrack web UI.
+#.  Open menu `ftrack new` and choose one of the publish actions.
+
+Building from source guide
+==========================
+
+#.  Download and install ftrack Connect from
+    https://www.ftrack.com/portfolio/connect.
 #.  Open a terminal and navigate to a <connect-plugin-directory. The directory
     can be found from Connect menu (click on service icon) > Open plugin
     directory.
@@ -39,10 +58,3 @@ Installation guide
 
         rm -r dependencies/ftrack_connect_nuke_publish
         rm -r dependencies/ftrack_connect_nuke_publish-VERSION-py2.7.egg-info
-
-Starting from Connect
-=====================
-
-#.  Start ftrack Connect (close and start if already running).
-#.  Start Nuke for a task using ftrack connect or the ftrack web UI.
-#.  Open menu `ftrack new` and choose one of the publish actions.
