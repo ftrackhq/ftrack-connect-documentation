@@ -44,7 +44,6 @@ that is likely to be solved before the final release:
     :ref:`Nuke usage <nuke/usage>` and :ref:`Maya usage <maya/usage>`.
 *   The alembic and maya binary format cannot be disabled and both are always
     published.
-*   It is not possible to go back and change settings if a publish fails.
 *   The :term:`asset type` will be selected based on what you want to publish,
     but you are not restricted to this type. It does however affect the ability
     to import using the current version of the :term:`import dialog`. To publish
