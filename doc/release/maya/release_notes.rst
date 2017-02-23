@@ -8,6 +8,24 @@
 Maya
 ****
 
+.. release:: 0.4.0
+    :date: 2017-02-23
+
+    .. change:: new
+        :tags: Publish, Review
+
+        Added support for adding web reviewable when publishing.
+
+    .. change:: changed
+        :tags: Publish
+
+        Changed publish workflow icons.
+
+    .. change:: fixed
+        :tags: Publish
+
+        Fixed issue with `Open in ftrack` button.
+
 .. release:: 0.3.2
     :date: 2017-02-07
 

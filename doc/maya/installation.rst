@@ -14,8 +14,8 @@ Installation guide
     https://www.ftrack.com/portfolio/connect.
 #.  Open the <connect-plugin-directory> by from the Connect menu:
     (click on service icon) > Open plugin directory.
-#.  Download the plugins from: https://s3-eu-west-1.amazonaws.com/ftrack-deployment/ftrack-connect/plugins/ftrack-connect-maya-publish-0.3.2.zip
-#.  Unzip ftrack-connect-maya-publish-0.3.2.zip in <connect-plugin-directory>
+#.  Download the plugins from: https://s3-eu-west-1.amazonaws.com/ftrack-deployment/ftrack-connect/plugins/ftrack-connect-maya-publish-0.4.0.zip
+#.  Unzip ftrack-connect-maya-publish-0.4.0.zip in <connect-plugin-directory>
 #.  Restart ftrack Connect.
 #.  Now you can launch Maya through Connect.
 
