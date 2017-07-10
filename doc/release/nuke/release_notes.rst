@@ -8,6 +8,15 @@
 Nuke
 ****
 
+.. release:: 0.5.1
+    :date: 2017-07-10
+
+    .. change:: changed
+        :tags: Menu
+
+        Move menu items from the separate "ftrack_new" menu into a submenu
+        called "Beta" under the standard "ftrack" menu.
+
 .. release:: 0.5.0
     :date: 2017-04-06
 

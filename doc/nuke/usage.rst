@@ -13,7 +13,7 @@ before using the :term:`publish dialog`.
 Selecting what to type of content to publish
 ============================================
 
-Select publish from the :guilabel:`ftrack new` menu and a window showing the
+Select publish from the :guilabel:`ftrack/Beta` sub menu and a window showing the
 possible actions will appear. At the moment there are a limited set of publish
 actions to choose from:
 
